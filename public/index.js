@@ -43,7 +43,7 @@ let allProducts = [];
 // Function to fetch all products
 async function fetchProducts() {
     try {
-        const response = await fetch('http://localhost:3000/products');
+        const response = await fetch('/products');
 
         if (!response.ok) {
             throw new Error('Error fetching products');
