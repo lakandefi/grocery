@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canillas Grocery Store</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="store-info">
+                <h1>Canillas Grocery Store</h1>
+                <div class="date" id="current-date"></div>
+            </div>
+        </header>
+
+    <!-- Search bar -->
+    <div class="search-bar">
+        <input type="text" id="search-input" placeholder="Search item">
+    </div>
+
+    <div class="category-filter">
+        <button class="category-btn active">All Items</button>
+        <button class="category-btn">Canned Goods</button>
+        <button class="category-btn">Beverages</button>
+        <button class="category-btn">Snacks</button>
+        <button class="category-btn">School Supplies</button> 
+        <button class="category-btn">Household</button>
+        <button class="category-btn">Personal Care</button>
+    </div>
+
+    <!-- Error message -->
+    <div class="error-message" id="error-container">
+        Could not load products. Please try again later.
+    </div>
+
+    <!-- Loading products -->
+    <div class="items-grid" id="items-container">
+        <div class="loading">Loading products...</div>
+    </div>
+
+    <footer>
+        <p>© 2025 Sari-Sari Store Inventory System | Last updated: <span id="footer-date"></span></p>
+    </footer>
+    <script src="./index.js"></script>
+</body>
+</html>
