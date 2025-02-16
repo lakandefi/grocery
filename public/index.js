@@ -80,7 +80,7 @@ async function displayProducts(products) {
         card.className = 'item-card';
         card.dataset.category = product.category || 'other';
 
-        let imagePath = product.image.startsWith('/') ? product.image : '/' + product.image;
+        let imagePath = `https://grocery-zyic.onrender.com${product.image}`;
 
         // HTML code for each product
         card.innerHTML = `
